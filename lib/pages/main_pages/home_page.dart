@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../api_pages/get_data.dart';
 import '../mis/drawer.dart';
 
 class home_page extends StatefulWidget {
@@ -19,6 +20,9 @@ class _home_pageState extends State<home_page> {
       appBar: AppBar(
         title: Text("Pakistan"),
       ),
+        body:Center(
+        child: getapidata();
+        ),
     );
   }
 }
